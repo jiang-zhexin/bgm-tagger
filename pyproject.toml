@@ -1,0 +1,23 @@
+[project]
+name = "bgm-tagger"
+version = "0.0.1"
+description = "Model tagger for parsing anime release filenames into BIO/XML entities"
+readme = "README.md"
+requires-python = ">=3.12"
+authors = [{ name = "jiang-zhexin", email = "162887873+jiang-zhexin@users.noreply.github.com" }]
+dependencies = [
+  "huggingface-hub>=2.0.0",
+  "numpy>=2.5.0",
+  "safetensors>=0.8.0",
+  "torch>=2.14.0",
+]
+
+[dependency-groups]
+dev = [
+  "ruff>=0.17.0",
+  "ty>=0.0.86",
+]
+
+[build-system]
+requires = ["uv_build>=0.13.0,<0.14"]
+build-backend = "uv_build"
